@@ -1,1 +1,18 @@
+import requests
+from bs4 import BeautifulSoup
 
+# Choose a simple website (for example: example.com)
+url = https://pmc.ncbi.nlm.nih.gov/articles/PMC9309999/"
+response = requests.get(url)
+html = response.text
+
+# Parse text
+soup = BeautifulSoup(html, "html.parser")
+paragraphs = [p.get_text() for p in soup.find_all("p")]
+text = "\n".join(paragraphs)
+
+# Save text to file
+with open("page.txt", "w", encoding="utf-8") as f:
+    f.write(text)
+
+print("Saved webpage text to page.txt")
