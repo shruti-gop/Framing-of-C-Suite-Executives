@@ -10,7 +10,7 @@ np.random.seed(42)
 df = pd.DataFrame({
     "exec_background_score": np.random.uniform(0, 1, 10),  # X
 })
-df["framing_score"] = 0.6 * df["exec_background_score"] + np.random.normal(0, 0.1, 10)  # M
+df["framing_score"] = 0.6 * df["exec_background_score"] + np.random.normal(0, 0.1, 10)  # Z
 df["market_cap"] = 1.2 * df["framing_score"] + 0.4 * df["exec_background_score"] + np.random.normal(0, 0.1, 10) # Y
 
 print("\n=== Toy Dataset Preview ===")
