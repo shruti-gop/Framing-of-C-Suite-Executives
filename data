@@ -1,3 +1,7 @@
+keywords = ["appointed CEO", "named CFO", "joined as Chief", "bio", "background", "education", "with a PhD", "engineer”, “big company”, “manager”, “hired”, “-startup”, “-small business”, “-hiring”, "-nonprofit"]
+
+
+
 import numpy as np
 import pandas as pd
 
