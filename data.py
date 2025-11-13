@@ -5,6 +5,14 @@ keywords = ["appointed CEO", "named CFO", "joined as Chief", "bio", "background"
 import numpy as np
 import pandas as pd
 
+#later connect data list and the website scraping
+"""
+urls = [
+    n/a
+]
+"""
+
+
 # Simulated toy dataset
 np.random.seed(42)
 df = pd.DataFrame({
